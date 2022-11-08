@@ -1,0 +1,32 @@
+footer {
+    height: 160px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding: 15px 60px;
+    background-color: #202020;
+}
+
+footer div h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer div img {
+    padding: 10px;
+}
+
+footer .credits {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
