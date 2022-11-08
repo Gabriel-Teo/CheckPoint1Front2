@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../imagens/luz-trilhas-acima-edificios_1359-715.webp");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.divisao {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+
+}
+
+.grid1 {
+    /* background-color: rgb(39, 72, 201); */
+    
+    
+    
+
+}
+
+.grid2 {
+
+    /* background-color: rgb(94, 96, 95); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+
+.main-header {
+    height: 70px;
+    background-color: rgb(202, 207, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 40px;
+    color: aliceblue;
+    
+}
+
+.formulario {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(94, 96, 95);
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.formulario1 {
+    background-color: rgb(94, 96, 95);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.formulario2 {
+    background-color: rgb(94, 96, 95);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.inserir {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.inserir2 {
+    width: 320px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: rgb(152, 194, 230);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.botao1 {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.imagem {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+h3 {
+    text-align: center;
+}
+.description {
+    text-align: justify;
+    margin: 5px;
+}
+.footer {
+    height: 20px;
+    background-color: aliceblue;
+}
+h4 {
+    text-align: center;
+}
