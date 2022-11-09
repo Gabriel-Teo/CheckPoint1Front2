@@ -18,9 +18,7 @@ buttonAdd.addEventListener('click', function addCard() {
         <p class="description">
         ${desc.value}
         </p>
-        <div class="botao1">
-            <button class="botao">Saiba Mais</button>
-        </div>
+        
     </div>
     `;
 
