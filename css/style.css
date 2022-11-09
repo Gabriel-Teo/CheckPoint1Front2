@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../imagens/luz-trilhas-acima-edificios_1359-715.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divisao {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+
+}
+
+.grid1 {
+    /* background-color: rgb(39, 72, 201); */
+
+
+
+
+}
+
+.grid2 {
+
+    /* background-color: rgb(94, 96, 95); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+
+.main-header {
+    height: 70px;
+    background-color: rgb(202, 207, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 40px;
+    color: aliceblue;
+
+}
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(94, 96, 95);
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+.formulario1 {
+    background-color: rgb(94, 96, 95);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.formulario2 {
+    background-color: rgb(94, 96, 95);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.inserir {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.inserir2 {
+    width: 320px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: rgb(152, 194, 230);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.botao1 {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(229, 229, 229);
+    background-color: rgb(79, 79, 79);
+    transition: ease-in .2s;
+}
+
+.botao:hover {
+    background-color: rgb(116, 116, 116);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.imagem {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #787878;
+    width: 380px;
+    height: 460px;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: ease-in .2s;
+}
+
+.card:hover {
+    box-shadow: 0px 3px 8px #f80707;
+
+}
+
+.card .imagem {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 26px;
+    text-align: center;
+    color: rgb(229, 229, 229);
+}
+
+p {
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.description {
+    text-align: justify;
+    margin: 5px;
+}
+
+.footer {
+    height: 20px;
+    background-color: aliceblue;
+}
+
+h4 {
+    text-align: center;
+}
