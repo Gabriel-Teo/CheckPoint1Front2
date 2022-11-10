@@ -8,51 +8,40 @@
     list-style: none;
 
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-image: url("../imagens/luz-trilhas-acima-edificios_1359-715.webp");
     background-size:cover;
     background-attachment: fixed;
 }
-
 .divisao {
     display: grid;
     grid-template-columns: 2fr 6fr;
 
 }
 .titulo {
-    background-color: aquamarine;
+    background-color: rgb(117, 131, 126);
     position: sticky;
     top: 0;
     width:100%;
     height: 120px;
 }
-
 .grid1 {
-    background-color: rgb(28, 28, 29);
+    background-color: rgb(43, 43, 44);
     height: 100vh;
     position: sticky;
-    top: 1px;
-    
-    
-
+    top: 1px
 }
-
 .grid2 {
 
-    /* background-color: rgb(94, 96, 95); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;
     margin-bottom: 20px;
 }
-
-
 .main-header {
     height: 70px;
     background-color: rgb(202, 207, 212);
@@ -62,26 +51,21 @@ body {
     position: sticky;
     top: 0;
 }
-
 h1 {
     font-family: 'Merriweather', serif;
     text-align: center;
     padding: 40px;
     color: aliceblue;
 }
-
-
 .formulario {
     
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(94, 96, 95); */
     border-radius: 20px;
     margin-top: 20px;
 
 }
 .formulario1 {
-    /* background-color: rgb(94, 96, 95); */
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 0 0;
@@ -89,7 +73,6 @@ h1 {
 }
 
 .formulario2 {
-    /* background-color: rgb(94, 96, 95); */
     display: flex;
     flex-direction: column;
 }
@@ -132,7 +115,7 @@ h2 {
     width: 100px;
     border-radius: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .imagem {
     width: 400px;
@@ -158,9 +141,34 @@ h3 {
     margin: 5px;
 }
 .footer {
-    height: 20px;
-    background-color: aliceblue;
+    display: flex;
+    justify-content:space-around;
+  gap: 30px;
 }
 h4 {
     text-align: center;
+}
+.github {
+    width: 50px;
+    height: 50px;
+}
+.mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.small {
+    color: aliceblue;
+}
+.footer2 {
+    background-color: rgb(61, 60, 60);
+    color: aliceblue;
+    text-align: center;
+    
+}
+.footer3 {
+    position: fixed;
+    bottom: 0;
+    width:341px
 }
