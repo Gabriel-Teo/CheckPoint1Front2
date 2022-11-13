@@ -1,215 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    outline: none;
-    list-style: none;
-
+    margin: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+html,
 body {
-    background-image: url("../imagens/luz-trilhas-acima-edificios_1359-715.webp");
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('.././img/landscape.png');
     background-size: cover;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.divisao {
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-
-}
-
-.grid1 {
-    /* background-color: rgb(39, 72, 201); */
-
-
-
-
-}
-
-.grid2 {
-
-    /* background-color: rgb(94, 96, 95); */
+.sideBar {
     display: flex;
-    justify-content: center;
+    width: 20vw;
+    height: 100%;
+    flex-direction: column;
+    margin-right: 2vw;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cardCreator {
+    display: flex;
     flex-wrap: wrap;
-    gap: 100px;
-    margin-bottom: 20px;
-}
-
-
-.main-header {
-    height: 70px;
-    background-color: rgb(202, 207, 212);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-}
-
-h1 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    padding: 40px;
-    color: aliceblue;
-
-}
-
-.formulario {
-
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(94, 96, 95);
-    border-radius: 20px;
-    margin-top: 20px;
-
-}
-
-.formulario1 {
-    background-color: rgb(94, 96, 95);
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px 20px 0 0;
-
-}
-
-.formulario2 {
-    background-color: rgb(94, 96, 95);
-    display: flex;
-    flex-direction: column;
-}
-
-.title-form {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.inserir {
-    width: 320px;
-    height: 30px;
-    border-radius: 5px;
-    margin: auto;
-}
-
-.inserir2 {
-    width: 320px;
-    margin: auto;
-    border-radius: 5px;
-}
-
-h2 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    color: rgb(152, 194, 230);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.botao1 {
-    display: flex;
     justify-content: center;
 }
 
-.botao {
-    font-size: 15px;
-    height: 35px;
-    width: 100px;
-    border-radius: 16px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: rgb(229, 229, 229);
-    background-color: rgb(79, 79, 79);
-    transition: ease-in .2s;
+.cardCreator h1,
+label {
+    margin: 5px;
+    text-align: center;
+    color: whitesmoke;
 }
 
-.botao:hover {
-    background-color: rgb(116, 116, 116);
-    transform: scale(1.05);
-    cursor: pointer;
+.cardCreator input,
+textarea {
+    width: 80%;
+    height: 10%;
+    margin: 5%;
+    border: none;
+    border-radius: 10px;
 }
 
-.imagem {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+.cardCreator textarea {
+    height: 40%;
+}
+
+#postar:active {
+    transform: scale(0.95) translateY(3px);
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #787878;
-    width: 380px;
-    height: 460px;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 35vw;
+    height: 40vh;
     border-radius: 20px;
-    margin-top: 20px;
-    overflow: hidden;
-    transition: ease-in .2s;
+    margin-top: 2vw;
+    margin-bottom: auto;
 }
 
-.card:hover {
-    box-shadow: 0px 3px 8px #f80707;
-
+.card p {
+    width: 90%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    height: 50%;
+    margin-top: 10px;
 }
 
-.card .imagem {
+.card img {
     width: 100%;
+    height: 30%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-h3 {
-    padding: 5px;
-    font-size: 26px;
-    text-align: center;
-    color: rgb(229, 229, 229);
-}
-
-p {
-    font-size: 18px;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-}
-
-.description {
-    text-align: justify;
-    margin: 5px;
-}
-
-.footer {
-    height: 20px;
-    background-color: aliceblue;
-}
-
-h4 {
-    text-align: center;
-}
-
 @media (max-width: 500px) {
 
-    .divisao {
-        height: fit-content;
+    body {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    .container {
+    .cardCreator input {
+        margin: 10px 20px;
+    }
+
+    .sideBar {
+        height: 760px;
+        width: 100vw;
+    }
+
+    .sideBar h1 {
+        padding: 0 20px;
+    }
+
+    form {
+        height: 200px;
+    }
+
+    #conteiner {
         display: flex;
+        margin: 5px;
         flex-wrap: wrap;
-    }
-
-    .formulario {
-        padding: 0 28px;
     }
 
     .card {
