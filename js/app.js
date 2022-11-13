@@ -2,42 +2,41 @@
 var buttonAdd = document.getElementById('postar');
 
 buttonAdd.addEventListener('click', function (event) {
-    event.preventDefault()
-})
-
-buttonAdd.addEventListener('click', function addCard() {
     let titulo = document.getElementById('titulo');
     let img = document.getElementById('url');
     let desc = document.getElementById('descricao');
-    let container = document.getElementById('container')
-    let item =
-        `
+    let container = document.querySelector('#conteiner')
+    let item = 
+    `
     <div class="card">
-        <img src="${img.value}" class="imagem">
-        <h3>${titulo.value}</h3>
-        <p class="description">
+        <img src="${img.value}">
+        <h2>${titulo.value}</h2>
+        <p>
         ${desc.value}
         </p>
-        <div class="botao1">
-            <button class="botao">Saiba Mais</button>
-        </div>
     </div>
     `;
 
-    if (titulo.value === '' || titulo.value.length < 4) {
-        buttonAdd.disabled = true;
+    event.preventDefault()
+
+    //validações
+    if (titulo.value.length < 4 || desc.value.length < 4 || img.value == '') {
         return '';
     } else {
         container.innerHTML += item;
-    }
+        container.scrollTo(0, -Math.abs(container.scrollHeight));
+    } 
 });
 
-window.addEventListener('click', function () {
-    if (titulo.value === '' || titulo.value.length < 4) {
+window.addEventListener('keyup', function (){
+    let titulo = document.getElementById('titulo');
+    let img = document.getElementById('url');
+    let desc = document.getElementById('descricao');
+
+    if (titulo.value.length < 4 || desc.value.length < 4 || img.value == '') {
         buttonAdd.disabled = true;
-        return '';
     } else {
         buttonAdd.disabled = false;
-    }
+    } 
 })
 
