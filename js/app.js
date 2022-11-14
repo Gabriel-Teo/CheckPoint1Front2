@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function () {
+    let container = document.getElementById('conteiner');
+    container.scrollTo(0, -Math.abs(container.scrollHeight));
+});
 
 // Variavel do botão de postar.
 var buttonAdd = document.getElementById('postar');
@@ -8,7 +12,7 @@ buttonAdd.addEventListener('click', function (event) {
     let titulo = document.getElementById('titulo');
     let img = document.getElementById('url');
     let desc = document.getElementById('descricao');
-    let container = document.querySelector('#conteiner')
+    let container = document.querySelector('#conteiner');
     let form = document.getElementById('cardCreator');
     // variavel item (formato do post que sera postado)
     let item =
