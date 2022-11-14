@@ -10,9 +10,11 @@
 </head>
 
 <body>
+    <!-- barra lateral (superior on mobile) -->
     <div class="sideBar">
-        <form class="cardCreator">
-            <h1>Conte um Segredo</h1>
+        <!-- "formulario" aonde inputs viram o post -->
+        <h1>Conte um Segredo</h1>
+        <form class="cardCreator" id="cardCreator">
             <label for="url">Adicione uma imagem</label>
             <input type="text" id="url" placeholder="Url da Imagem">
             <label for="titulo">Titulo</label>
@@ -21,9 +23,12 @@
             <textarea name="desc" id="descricao" placeholder="Segredo secreto"></textarea>
             <input type="submit" value="Postar" id="postar" disabled>
         </form>
+        <button id="mobileModal">+</button>
     </div>
+    <!-- Conteiner -- Posts dos usuarios vão aqui -->
     <div id="conteiner">
     </div>
+
     <script src="./js/app.js"></script>
 </body>
 

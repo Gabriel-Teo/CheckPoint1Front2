@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* config global */
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
-html, body {
+/* modificação de estrutura HTML e BODY */
+html,
+body {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -12,6 +18,7 @@ html, body {
     background-repeat: no-repeat;
 }
 
+/* Barra lateral */
 .sideBar {
     display: flex;
     width: 20vw;
@@ -21,19 +28,27 @@ html, body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.sideBar h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Inicio modificações do formulario */
 .cardCreator {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cardCreator h1, label {
+.cardCreator label {
     margin: 5px;
     text-align: center;
     color: whitesmoke;
 }
 
-.cardCreator input, textarea {
+.cardCreator input,
+textarea {
     width: 80%;
     height: 10%;
     margin: 5%;
@@ -48,7 +63,8 @@ html, body {
 #postar:active {
     transform: scale(0.95) translateY(3px);
 }
-
+/* final modificações formulario */
+/* conteiner dos posts */
 #conteiner {
     display: flex;
     flex-direction: row-reverse;
@@ -58,7 +74,7 @@ html, body {
     height: 100vh;
     overflow-y: scroll;
 }
-
+/* Formatação dos posts */
 .card {
     display: flex;
     flex-direction: column;
@@ -71,6 +87,13 @@ html, body {
     margin-top: 2vw;
     margin-bottom: auto;
 }
+
+.card h2 {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+}
+
 .card p {
     width: 90%;
     overflow-wrap: break-word;
@@ -84,4 +107,73 @@ html, body {
     height: 30%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+/* esconde o botão modal no desktop */
+#mobileModal {
+    display: none;
+}
+
+/* @midia para ficar adaptavel ao mobile */
+@media screen and (max-width: 777px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sideBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+    }
+
+    .cardCreator {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: fixed;
+        margin-top: 5px;
+        width: 100vw;
+        height: 90vh;
+        top: 12vh;
+        font-size: larger;
+        background-color: rgb(0, 0, 0, 1);
+        padding: 10px;
+    }
+
+    .cardCreator label {
+        margin: 5px;
+    }
+
+    .cardCreator textarea,
+    input {
+        height: 40%;
+        margin: 0px;
+    }
+
+    .card {
+        width: 80vw;
+        height: 80vh;
+        margin-top: 20px;
+    }
+
+    #mobileModal {
+        display: block;
+        height: 50%;
+        width: 50px;
+        margin: 20px;
+        border: none;
+        border-radius: 30%;
+        font-size: 30px;
+        background-color: #000000;
+        color: white;
+    }
+
+    #mobileModal:active {
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
 }
